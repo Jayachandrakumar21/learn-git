@@ -1,7 +1,7 @@
 created by: jayachandra_kumar
 topic: git
-
+initializing git in local repo and linking it to remote github repo
 git init
 git branch -M main
 git remote add origin <github-repo_url>
-git add . ; git commit -m "valid meaningfull massage" ; git push origin main
+git add . ; git commit -m "meaningfull massage" ; git push origin main
