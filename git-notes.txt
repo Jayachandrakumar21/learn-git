@@ -1,5 +1,5 @@
-Created by: jayachandra_kumar
-Topic:git
+Created by:Jayachandra_kumar
+Topic:Git
 initializing git in local repo and linking it to remote github repo
 Note: commands should be little more indetails for better understanding
 
