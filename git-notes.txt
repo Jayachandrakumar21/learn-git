@@ -1,7 +1,7 @@
-Created by:Jayachandra_kumar
-Topic:Git
-initializing git in local repo and linking it to remote github repo
-Note: commands should be little more indetails for better understanding
+#Created by:Jayachandra_kumar
+#Topic:Git
+initializing git in local repo and linking it to the remote GitHub repo
+Note: commands should be a little more detailed for better understanding
 
 git init
 git branch -M main
