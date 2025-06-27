@@ -1,9 +1,9 @@
 #Created by:Jayachandra_kumar
-#Topic:Git
-initializing git in local repo and linking it to the remote GitHub repo
+#Topic: Git
+initializing git in the local repo and linking it to the remote GitHub repo
 Note: commands should be a little more detailed for better understanding
 
 git init
 git branch -M main
 git remote add origin <github-repo_url>
-git add . ; git commit -m "meaningfull massage" ; git push origin main
+git add . ; git commit -m "meaningful massage" ; git push origin main
