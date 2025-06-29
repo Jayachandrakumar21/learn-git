@@ -10,3 +10,60 @@ hint: Updates were rejected because the tip of your current branch is behind
 hint: its remote counterpart. Integrate the remote changes (e.g.
 hint: 'git pull ...') before pushing again.
 hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+
+solution suggested by gpt
+========================
+The error message you're seeing:
+
+vbnet
+Copy
+Edit
+! [rejected]        main -> main (non-fast-forward)
+error: failed to push some refs to ...
+hint: Updates were rejected because the tip of your current branch is behind...
+means that someone else has pushed changes to the main branch on GitHub that you don't have in your local branch. Git is preventing you from overwriting those changes.
+
+✅ Solution: Pull the latest changes and then push
+You have two main options:
+
+🔁 Option 1: Merge remote changes (safe & recommended)
+This will pull remote changes and merge them into your local branch:
+
+bash
+Copy
+Edit
+git pull origin main
+Then push your changes:
+
+bash
+Copy
+Edit
+git push origin main
+If there are conflicts, Git will ask you to resolve them.
+
+🔄 Option 2: Rebase (clean history, but advanced)
+If you want a cleaner history (optional):
+
+bash
+Copy
+Edit
+git pull --rebase origin main
+Then push:
+
+bash
+Copy
+Edit
+git push origin main
+⚠️ Option 3: Force Push (dangerous, only if you're sure)
+This will overwrite the remote branch with your local version — be careful as it will delete others’ changes.
+
+bash
+Copy
+Edit
+git push origin main --force
+Use this only if you’re certain your local version should override the remote version.
+
+✅ Best Practice:
+Usually go with Option 1 (pull and merge) unless you know what you're doing.
+
+Let me know if you want help resolving conflicts or understanding rebase!
